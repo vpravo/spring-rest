@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <nav class="navbar navbar-dark bg-dark" th:fragment="nav">
+        <ul class="navbar-nav">
+            <li class="nav-item navbartext">
+                <a th:text="${user.email}"></a>
+                <a>with:</a>
+                <a th:each="role : ${user.roles}">
+                    <a th:text="${role.toString()}">
+                    </a>
+                </a>
+            </li>
+        </ul>
+        <a class="navbartext" href="/logout">Logout</a>
+    </nav>
+</body>
+</html>

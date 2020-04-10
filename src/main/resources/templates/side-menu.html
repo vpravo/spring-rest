@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <ul class="nav flex-column nav-pills nav-fill menu" th:fragment="menu">
+        <li class="nav-item" th:if="${isAdmin == true}">
+            <a class="nav-link side-menu" href="/admin">Admin</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link side-menu" href="/user">User</a>
+        </li>
+    </ul>
+</body>
+</html>
