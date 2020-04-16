@@ -27,12 +27,32 @@ public class User implements UserDetails {
 
     private String password;
 
+    private boolean isAdmin;
+
+    private boolean isUser;
+
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"))
     @Enumerated(EnumType.STRING)
     private Set<Role> roles = new HashSet<>();
 
     public User() {}
+
+    public boolean getIsAdmin() {
+        return isAdmin;
+    }
+
+    public void setIsAdmin(boolean isAdmin) {
+        this.isAdmin = isAdmin;
+    }
+
+    public boolean getIsUser() {
+        return isUser;
+    }
+
+    public void setIsUser(boolean isUser) {
+        this.isUser = isUser;
+    }
 
     public Long getId() {
         return id;

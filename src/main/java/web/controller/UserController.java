@@ -21,8 +21,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-@Controller
-@RequestMapping("/")
+/*@Controller
+@RequestMapping("/")*/
+/*
 public class UserController {
 
 	@Autowired
@@ -51,7 +52,7 @@ public class UserController {
 		return "admin-main-new-user";
 	}
 
-	@RequestMapping(value = "admin/new", method = RequestMethod.POST)
+	//@RequestMapping(value = "admin/new", method = RequestMethod.POST)
 	public String newUser (ModelMap model, Principal principal, HttpServletRequest request){
 	    User user = new User();
 	    user.setFirstName(request.getParameter("first_name"));
@@ -154,4 +155,4 @@ public class UserController {
 		return "build/index";
 	}
 
-}
+}*/

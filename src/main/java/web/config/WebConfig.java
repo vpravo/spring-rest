@@ -1,3 +1,4 @@
+/*
 package web.config;
 
 
@@ -21,12 +22,14 @@ public class WebConfig implements WebMvcConfigurer {
                 .addResourceLocations(("classpath:/static/"));
     }
 
-    /*@Bean
+    */
+/*@Bean
     public SpringResourceTemplateResolver templateResolver() {
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setApplicationContext(applicationContext);
         templateResolver.setPrefix("templates/build/");
         templateResolver.setSuffix(".html");
         return templateResolver;
-    }*/
-}
+    }*//*
+
+}*/
